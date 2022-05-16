@@ -1,6 +1,6 @@
 body {
 	font-family: 'Rye', cursive;
-	background-color: LightPink;
+	background-color: #80441F;
 }
 
 h1 { 
@@ -59,4 +59,9 @@ td {
 
 .shoes {
   z-index: 1
+}
+
+#mole {
+  height: 75px;
+  width: 75px;
 }
