@@ -26,21 +26,43 @@ var mainIndex = 0
 
 var headIndex = 0
 var bodyIndex = 0
-var feetIndex = 0
+var shoesIndex = 0
 
 var head = document.getElementById('head')
 var body = document.getElementById('body')
-var feet = document.getElementById('feet')
+var shoes = document.getElementById('shoes')
 
 function changeHorizontal(shift) {
-  headIndex += shift
 
-  if (headIndex < 0) headIndex = 5
-  if (headIndex > 5) headIndex = 0
+  if (mainIndex == 0 ) {
+      headIndex += shift
 
-  head.src = './images/head' + headIndex + '.png'
+      if (headIndex < 0) headIndex = 5
+      if (headIndex > 5) headIndex = 0
+
+      head.src = './images/head' + headIndex + '.png'
+  }
+  
+  
+  if (mainIndex == 1 ) {
+    bodyIndex += shift
+
+    if (bodyIndex < 0) bodyIndex = 5
+    if (bodyIndex > 5) bodyIndex = 0
+
+    body.src = './images/body' + bodyIndex + '.png'
 }
 
+
+if (mainIndex == 2 ) {
+  shoesIndex += shift
+
+  if (shoesIndex < 0) shoesIndex = 5
+  if (shoesIndex > 5) shoesIndex = 0
+
+  shoes.src = './images/shoes' + shoesIndex + '.png'
+}
+}
 function changeVertical(shift) {
   mainIndex += shift
 
